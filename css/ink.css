@@ -8,7 +8,7 @@
   padding:0;
 }
 
-body{
+body {
   width:100% !important;
   min-width: 100%;
   -webkit-text-size-adjust:100%;
@@ -59,10 +59,6 @@ a img {
   border: none;
 }
 
-p {
-  margin: 0 0 0 10px;
-}
-
 table {
   border-spacing: 0;
   border-collapse: collapse;
@@ -78,8 +74,11 @@ td {
 
 table, tr, td {
   padding: 0;
-  vertical-align: top;
   text-align: left;
+}
+
+tr, td {
+  vertical-align: top;
 }
 
 hr {
@@ -98,7 +97,6 @@ table.body {
 
 table.container {
   width: 580px;
-  margin: 0 auto;
   text-align: inherit;
 }
 
@@ -326,32 +324,59 @@ body, table.body, h1, h2, h3, h4, h5, h6, p, td {
   padding:0;
   margin: 0;
   text-align: left;
-  line-height: 1.3;
+  line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
   word-break: normal;
 }
 
-h1 {font-size: 40px;}
-h2 {font-size: 36px;}
-h3 {font-size: 32px;}
-h4 {font-size: 28px;}
-h5 {font-size: 24px;}
-h6 {font-size: 20px;}
-body, table.body, p, td {font-size: 14px;line-height:19px;}
-
-p.lead, p.lede, p.leed {
-  font-size: 18px;
-  line-height:21px;
+h1 {
+  font-size: 30px;
+  line-height:30px;
 }
 
-p {
-  margin-bottom: 10px;
+h2 {
+  font-size: 26px;
+  line-height:30px;
+}
+
+h3 {
+  font-size: 26px;
+  line-height:30px;
+  font-style: italic;
+}
+
+h4 {
+  font-size: 22px;
+  line-height:30px;
+}
+
+h5 {
+  font-size: 22px;
+  line-height:30px;
+  font-style: italic;
+}
+
+h6 {
+  font-size: 20px;
+  line-height:30px;
+}
+
+body, table.body, p, td {
+  font-weight: normal;
+  font-size: 20px;
+  line-height:30px;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 15px;
 }
 
 small {
-  font-size: 10px;
+  font-size: 15px;
+  line-height: 15px;
 }
 
 a {
@@ -436,11 +461,11 @@ table.large-button td {
   background: #2ba6cb;
   border: 1px solid #2284a1;
   color: #ffffff;
-  padding: 8px 0;
+  padding: 8px 0 7px;
 }
 
 table.tiny-button td {
-  padding: 5px 0 4px;
+  padding: 8px 0 7px;
 }
 
 table.small-button td {
@@ -448,11 +473,11 @@ table.small-button td {
 }
 
 table.medium-button td {
-  padding: 12px 0 10px;
+  padding: 15px 0 15px;
 }
 
 table.large-button td {
-  padding: 21px 0 18px;
+  padding: 15px 0 15px;
 }
 
 table.button td a,
@@ -464,23 +489,23 @@ table.large-button td a {
   text-decoration: none;
   font-family: Helvetica, Arial, sans-serif;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 20px;
   display: block;
   height: 100%;
   width: 100%;
 }
 
 table.tiny-button td a {
-  font-size: 12px;
+  font-size: 15px;
   font-weight: normal;
 }
 
 table.small-button td a {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 table.medium-button td a {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 table.large-button td a {
