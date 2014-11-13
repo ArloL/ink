@@ -5,17 +5,17 @@ module.exports = function(grunt) {
       options: {partials: 'css/*.css'},
       templates: {
         src: 'templates/**/*.html',
-        dest: 'build/downloads',
+        dest: 'build/downloads/',
         cwd: './'
       },
       docsDev: {
         src: 'docs/examples/*.html',
-        dest: 'build/docs',
+        dest: 'build/',
         cwd: './'
       },
       docsDeploy: {
         src: 'docs/examples/*.html',
-        dest: 'build',
+        dest: 'build/',
         cwd: './'
       }
     },
